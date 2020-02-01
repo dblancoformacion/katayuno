@@ -1,23 +1,38 @@
-# driver
+# driver / piloto
+FIZZ = 'Fizz'
+BUZZ = 'Buzz'
+NUMERO_FIZZ = 3
+NUMERO_BUZZ = 5
 
-
-# piloto
-
-#import unittest
 class Kata:
-	def fizzbuzz(n):
-		r = ''
-		if n%3==0:
-			r+='Fizz'
-		if n%5==0:
-			r+='Buzz'
-		if r=='':
-			r=n
-		return r
+	def esDivisible(numero,divisor):
+		#if
+		return True
+	def contiene():
+		return True
+	def esFizz():
+		return True
+	def esBuzz():
+		return True
+	def esFizzBuzz():
+		return True
+	def fizzbuzz(numero):
+		resultado = ''
+		if numero%NUMERO_FIZZ==0:
+			resultado+=FIZZ
+		if numero%NUMERO_BUZZ==0:
+			resultado+=BUZZ
+		if resultado=='':
+			resultado=numero
+		#str(numero).find(3)
+		return resultado
 
 # moq
 
 if __name__ == "__main__":
+
+
+
 	for i in range(100):
 		print(i+1,Kata.fizzbuzz(i+1))
 '''
