@@ -3,14 +3,15 @@ import unittest
 from fizzbuzz import *
 
 class TestFizzBuzz(unittest.TestCase):
+	kata=Kata()
 	def test_ns(self):
-		self.assertEqual(1, Kata.fizzbuzz(1) )
+		self.assertEqual(1, self.kata.fizzbuzz(1) )
 	def test_x3(self):
-		self.assertEqual('Fizz', Kata.fizzbuzz(3) )
+		self.assertEqual('Fizz', self.kata.fizzbuzz(3) )
 	def test_x5(self):
-		self.assertEqual('Buzz', Kata.fizzbuzz(5) )
+		self.assertEqual('Buzz', self.kata.fizzbuzz(5) )
 	def test_x3x5(self):
-		self.assertEqual('FizzBuzz', Kata.fizzbuzz(15) )
+		self.assertEqual('FizzBuzz', self.kata.fizzbuzz(15) )
 
 # debería haber un assert por test
 # si falla el primero no te enteras del resto
