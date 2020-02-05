@@ -12,6 +12,8 @@ class TestFizzBuzz(unittest.TestCase):
 		self.assertEqual('Buzz', self.kata.fizzbuzz(5) )
 	def test_x3x5(self):
 		self.assertEqual('FizzBuzz', self.kata.fizzbuzz(15) )
+	def test_51(self):
+		self.assertEqual('FizzBuzz', self.kata.fizzbuzz(51) )
 
 # debería haber un assert por test
 # si falla el primero no te enteras del resto

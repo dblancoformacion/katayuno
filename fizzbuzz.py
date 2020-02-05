@@ -14,7 +14,7 @@ class Kata:
 	def esBuzz(self,numero):
 		return self.esDivisible(numero,NUMERO_BUZZ) or self.contiene(numero,NUMERO_BUZZ)
 	def esFizzBuzz(self,numero):
-		return self.esDivisible(numero,NUMERO_FIZZ) and self.esDivisible(numero,NUMERO_BUZZ)
+		return self.contiene(numero,NUMERO_FIZZ) and self.esDivisible(numero,NUMERO_BUZZ)
 	def fizzbuzz(self,numero):
 		if self.esFizzBuzz(numero):
 			return FIZZ+BUZZ		
